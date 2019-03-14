@@ -1,0 +1,11 @@
+sudo: required
+services:
+  - docker
+
+before_install:
+  - docker build -t mardini0803/node-react-app -f Dockerfile.dev .
+
+script:
+  # -- --coverage exits the tests automaticaly
+  - docker run mardini0803/node-react-app npm run test -- --coverage
+  
