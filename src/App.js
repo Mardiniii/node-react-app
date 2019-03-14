@@ -17,7 +17,7 @@ class App extends Component {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Learn React with Udemy
+            Updated to check TravisCI deployment :)
           </a>
         </header>
       </div>
